@@ -36,17 +36,17 @@ int initialize(headNode** h);
 /* note: freeList는 싱글포인터를 매개변수로 받음
         - initialize와 왜 다른지 이해 할것
          - 이중포인터를 매개변수로 받아도 해제할 수 있을 것 */
-int freeList(headNode* h);
+int freeList(headNode* h); // headNode 메모리 해제
 
-int insertNode(headNode* h, int key);
-int insertLast(headNode* h, int key);
-int insertFirst(headNode* h, int key);
-int deleteNode(headNode* h, int key);
-int deleteLast(headNode* h);
-int deleteFirst(headNode* h);
-int invertList(headNode* h);
+int insertNode(headNode* h, int key); // 노드 삽입
+int insertLast(headNode* h, int key); // list 마지막에 노드 삽입
+int insertFirst(headNode* h, int key); // list 처음에 삽입
+int deleteNode(headNode* h, int key); // 노드 삭제
+int deleteLast(headNode* h); // list 마지막 노드 삭제
+int deleteFirst(headNode* h); // list 첫번째 노드 삭제
+int invertList(headNode* h); // 리스트 순서 뒤집기
 
-void printList(headNode* h);
+void printList(headNode* h); // 리스트 출력
 
 
 int main()
